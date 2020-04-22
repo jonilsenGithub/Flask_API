@@ -81,6 +81,13 @@ sudo pip3 install -r requirements.txt
 sudo python3 miniProject.py
 ```
 
+#### Running application as a Docker image:
+
+```
+sudo docker build . --tag=miniproject:v1
+sudo docker run -p 80:80 miniproject:v1
+```
+
 ## API Documentation
 
 #### GET
@@ -171,9 +178,3 @@ Example:
 ```
 curl -X DELETE -F 'name=boxer' -F 'username=jonas' -F 'password=nilsen' http://ec2-35-170-245-138.compute-1.amazonaws.com/delete/login/irish%20setter
 ```
-
-
-
-
-
-
